@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik" sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -60,18 +60,57 @@ body {
 .btn:visited {
   background-color: #e67e22;
   font-size: 20px;
-  color: #fff;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
-
+  font-weight: 600;
   display: inline-block;
+  transition: all 0.3s;
 }
 .btn-full:link,
 .btn-full:visited {
+  color: #fff;
   background-color: #e67e22;
 }
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
 .btn-outline:link,
 .btn-outline:visited {
+  background-color: #fdf2e9;
+  color: #555;
+}
+.btn-outline:hover,
+.btn-outline:active {
   background-color: #fff;
+  color: #555;
+  /* border: 3px solid #fff; */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-right {
+  margin-right: 1.6rem !important;
+}
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.48rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: ;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-size: 600;
 }
